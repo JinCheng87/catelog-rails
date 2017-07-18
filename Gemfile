@@ -5,7 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem "rspec-core", :github => "rspec/rspec-core"
+gem "rspec-expectations", :github => "rspec/rspec-expectations"
+gem "rspec-mocks", :github => "rspec/rspec-mocks"
+gem "rspec-support", :github => "rspec/rspec-support"
+gem "rspec-rails", :github => "rspec/rspec-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
 # Use postgresql as the database for Active Record
@@ -38,6 +42,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry'
 end
 
 group :development do
